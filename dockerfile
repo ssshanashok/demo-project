@@ -2,6 +2,6 @@ FROM python:3
 RUN mkdir WORK_REPO
 RUN cd WORK_REPO
 WORKDIR /WORK_REPO
-COPY hello-world.py .
-CMD ["python", "-u", "hello-world.py"]
-EXPOSE 5002
+COPY sample.py .
+CMD ["python", "-m", "http.server", "5055"]
+EXPOSE 5055
