@@ -4,3 +4,4 @@ RUN cd WORK_REPO
 WORKDIR /WORK_REPO
 COPY hello-world.py .
 CMD ["python", "-u", "hello-world.py"]
+EXPOSE 5002
