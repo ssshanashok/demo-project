@@ -31,7 +31,6 @@ metadata:
   name: ingress-wildcard-host
 spec:
   rules:
-  - host: "master"
     http:
       paths:
       - pathType: Prefix
